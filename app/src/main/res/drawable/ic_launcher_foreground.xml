@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Outer Navy Shield -->
+    <path
+        android:fillColor="@color/logo_navy"
+        android:pathData="M54,12 L18,25 Q16,55 20,80 Q28,100 54,106 Q80,100 88,80 Q92,55 90,25 Z" />
+
+    <!-- Inner Blue Shield -->
+    <path
+        android:fillColor="@color/logo_blue"
+        android:pathData="M54,18 L24,29 Q22,57 26,78 Q32,95 54,100 Q76,95 82,78 Q86,57 84,29 Z" />
+
+    <!-- Boy Head (Stylized) -->
+    <!-- Face White -->
+    <path
+        android:fillColor="@color/logo_white"
+        android:pathData="M54,45 C44,45 36,53 36,63 C36,73 44,81 54,81 C64,81 72,73 72,63 C72,53 64,45 54,45 Z" />
+
+    <!-- Hair Navy -->
+    <path
+        android:fillColor="@color/logo_navy"
+        android:pathData="M54,42 C44,42 35,48 35,58 L73,58 C73,48 64,42 54,42 Z" />
+
+    <!-- Eyes Navy -->
+    <path
+        android:fillColor="@color/logo_navy"
+        android:pathData="M48,62 A2,2 0 1,1 44,62 A2,2 0 1,1 48,62 Z M64,62 A2,2 0 1,1 60,62 A2,2 0 1,1 64,62 Z" />
+
+    <!-- Mouth Navy -->
+    <path
+        android:strokeColor="@color/logo_navy"
+        android:strokeWidth="1"
+        android:pathData="M50,72 Q54,75 58,72" />
+
+    <!-- Collar White -->
+    <path
+        android:fillColor="@color/logo_white"
+        android:pathData="M40,78 L54,92 L68,78 L75,85 L54,100 L33,85 Z" />
+
+</vector>

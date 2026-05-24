@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_surface"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        android:background="#33FFFFFF" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_alerts"
+            app:tint="@color/neon_red" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/icon"
+            android:text="Theft Alert"
+            style="@style/TextAppearance.SafeCharge.TitleLarge"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvType"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toEndOf="@id/icon"
+            android:text="24 May 2026, 10:41 AM"
+            style="@style/TextAppearance.SafeCharge.BodySmall" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="LOCATION"
+        style="@style/TextAppearance.SafeCharge.Label"
+        android:textColor="@color/text_dim" />
+
+    <LinearLayout
+        android:id="@+id/btnOpenMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/panel_bg"
+        android:backgroundTint="#0DFFFFFF"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_dashboard"
+            app:tint="@color/neon_cyan" />
+
+        <TextView
+            android:id="@+id/tvLocation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_weight="1"
+            android:text="Fetching location..."
+            style="@style/TextAppearance.SafeCharge.BodyMedium"
+            android:textColor="@color/neon_cyan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MAP >"
+            style="@style/TextAppearance.SafeCharge.Mono" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvPhotosLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="EVIDENCE PHOTOS"
+        style="@style/TextAppearance.SafeCharge.Label"
+        android:textColor="@color/text_dim" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerDetailsPhotos"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:clipToPadding="false" />
+
+    <TextView
+        android:id="@+id/tvNoPhotos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No photos associated with this alert."
+        style="@style/TextAppearance.SafeCharge.BodySmall"
+        android:visibility="gone" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnClose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="CLOSE"
+        style="@style/Widget.SafeCharge.Button.Ghost" />
+
+</LinearLayout>

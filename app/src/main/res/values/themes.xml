@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+        Base theme — Material3 DayNight NoActionBar.
+        All activities use this (no light variant needed;
+        SafeCharge is intentionally always dark).
+    -->
+    <style name="Base.Theme.SafeCharge"
+        parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- Primary brand colour (cyan accent) -->
+        <item name="colorPrimary">#FF00E5FF</item>
+        <item name="colorPrimaryVariant">#FF0097A7</item>
+        <item name="colorOnPrimary">#FF000000</item>
+
+        <!-- Secondary (muted teal) -->
+        <item name="colorSecondary">#FF00BCD4</item>
+        <item name="colorOnSecondary">#FF000000</item>
+
+        <!-- Surface / background -->
+        <item name="colorSurface">#FF111820</item>
+        <item name="colorOnSurface">#FFF0F4F8</item>
+        <item name="android:colorBackground">#FF080C10</item>
+        <item name="colorOnBackground">#FFF0F4F8</item>
+
+        <!-- Error (alarm red) -->
+        <item name="colorError">#FFFF3B3B</item>
+        <item name="colorOnError">#FFFFFFFF</item>
+
+        <!-- Status bar & nav bar — fully dark -->
+        <item name="android:statusBarColor">#FF080C10</item>
+        <item name="android:navigationBarColor">#FF080C10</item>
+        <item name="android:windowLightStatusBar">false</item>
+
+        <!-- Ripple uses accent tint -->
+        <item name="colorControlHighlight">#1A00E5FF</item>
+        <item name="colorControlActivated">#FF00E5FF</item>
+
+        <!-- EditText cursor + underline -->
+        <item name="colorAccent">#FF00E5FF</item>
+
+        <!-- SwitchCompat: thumb + track colours -->
+        <item name="switchStyle">@style/Widget.SafeCharge.Switch</item>
+
+        <!-- SeekBar progress tint -->
+        <item name="seekBarStyle">@style/Widget.SafeCharge.SeekBar</item>
+
+        <!-- Button default style -->
+        <item name="materialButtonStyle">@style/Widget.SafeCharge.Button</item>
+
+        <!--        &lt;!&ndash; Text appearances &ndash;&gt;-->
+        <!--        <item name="textAppearanceTitleLarge">@style/TextAppearance.ChargeProtect.TitleLarge</item>-->
+        <!--        <item name="textAppearanceTitleMedium">@style/TextAppearance.ChargeProtect.TitleMedium</item>-->
+        <!--        <item name="textAppearanceBodyMedium">@style/TextAppearance.ChargeProtect.BodyMedium</item>-->
+        <!--        <item name="textAppearanceBodySmall">@style/TextAppearance.ChargeProtect.BodySmall</item>-->
+    </style>
+
+    <style name="Theme.SafeCharge"
+        parent="Base.Theme.SafeCharge" />
+
+    <!-- ── Full-screen alarm theme (red-tinted) ─────────────── -->
+    <style name="Theme.SafeCharge.Alarm"
+        parent="Base.Theme.SafeCharge">
+        <item name="android:colorBackground">#FF0A0000</item>
+        <item name="android:statusBarColor">#FF0A0000</item>
+        <item name="android:navigationBarColor">#FF0A0000</item>
+        <item name="colorPrimary">#FFFF3B3B</item>
+        <item name="colorControlActivated">#FFFF3B3B</item>
+    </style>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!--  Widget overrides                                       -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <!-- SwitchCompat: cyan when on, muted when off -->
+    <style name="Widget.SafeCharge.Switch"
+        parent="Widget.AppCompat.CompoundButton.Switch">
+        <item name="thumbTint">#FF00E5FF</item>
+        <item name="trackTint">#3300E5FF</item>
+        <item name="switchMinWidth">52dp</item>
+    </style>
+
+    <!-- SeekBar: cyan progress, dark track -->
+    <style name="Widget.SafeCharge.SeekBar"
+        parent="Widget.AppCompat.SeekBar">
+        <item name="colorControlActivated">#FF00E5FF</item>
+        <item name="colorControlNormal">#FF1E3A50</item>
+    </style>
+
+    <!-- Default button: filled cyan, black text, full-width, rounded -->
+    <style name="Widget.SafeCharge.Button"
+        parent="Widget.Material3.Button">
+        <item name="backgroundTint">#FF00E5FF</item>
+        <item name="android:textColor">#FF000000</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.08</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <!-- Danger / destructive button (red) -->
+    <style name="Widget.SafeCharge.Button.Danger"
+        parent="Widget.SafeCharge.Button">
+        <item name="backgroundTint">#FFFF3B3B</item>
+        <item name="android:textColor">#FFFFFFFF</item>
+    </style>
+
+    <!-- Ghost / outlined button -->
+    <style name="Widget.SafeCharge.Button.Ghost"
+        parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">#FF1E3A50</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="android:textColor">#FF00E5FF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="rippleColor">#1A00E5FF</item>
+    </style>
+
+    <!-- ═══════════════════════════════════════════════════════ -->
+    <!--  Text appearances                                       -->
+    <!-- ═══════════════════════════════════════════════════════ -->
+
+    <style name="TextAppearance.SafeCharge.TitleLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#FFF0F4F8</item>
+        <item name="android:letterSpacing">-0.01</item>
+    </style>
+
+    <style name="TextAppearance.SafeCharge.TitleMedium" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFF0F4F8</item>
+        <item name="android:letterSpacing">0.01</item>
+    </style>
+
+    <style name="TextAppearance.SafeCharge.BodyMedium" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#FF7A94AD</item>
+        <item name="android:lineSpacingMultiplier">1.4</item>
+    </style>
+
+    <style name="TextAppearance.SafeCharge.BodySmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#FF3D5468</item>
+        <item name="android:letterSpacing">0.03</item>
+    </style>
+
+    <!-- Label style used inside cards -->
+    <style name="TextAppearance.SafeCharge.Label" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#FF00E5FF</item>
+        <item name="android:letterSpacing">0.12</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <!-- Monospace — used in status chips -->
+    <style name="TextAppearance.SafeCharge.Mono" parent="TextAppearance.Material3.LabelSmall">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">#FF00E5FF</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+
+    <style name="Theme.SafeCharge.Dialog" parent="Theme.Material3.DayNight.Dialog">
+        <item name="android:windowBackground">@drawable/panel_bg</item>
+        <item name="colorPrimary">@color/neon_cyan</item>
+    </style>
+
+    <style name="ShapeAppearance.SafeCharge.Image" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerSize">12dp</item>
+    </style>
+
+
+</resources>

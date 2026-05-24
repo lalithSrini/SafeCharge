@@ -1,0 +1,67 @@
+<resources>
+    <string name="app_name">SafeCharge</string>
+    <string name="header_subtitle">AI-Powered Theft Security</string>
+    <string name="dashboard_title">SafeCharge</string>
+    <string name="dashboard_subtitle">Anti-Theft Protection System</string>
+
+    <string name="status_secure">SYSTEM SECURE</string>
+    <string name="status_unprotected">UNPROTECTED</string>
+    <string name="status_armed">ARMED</string>
+    <string name="status_disarmed">DISARMED</string>
+    <string name="status_disarm_hint">Tap to disarm protection</string>
+    <string name="status_arm_hint">Tap to activate protection</string>
+
+    <string name="control_motion">Motion Detect</string>
+    <string name="control_motion_desc">Accelerometer active</string>
+    <string name="control_camera">Camera Capture</string>
+    <string name="control_camera_desc">Ready for trigger</string>
+    <string name="control_email">Email Alerts</string>
+    <string name="control_email_desc">2 recipients</string>
+    <string name="control_siren">Alarm Siren</string>
+    <string name="control_siren_desc">Max volume</string>
+
+    <string name="log_title">Activity Log</string>
+    <string name="log_live">● LIVE</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_subtitle">System Configuration</string>
+    <string name="settings_security">SECURITY</string>
+    <string name="settings_detection">DETECTION</string>
+    <string name="settings_alerts">ALERTS</string>
+
+    <string name="pin_title">Change Dismiss PIN</string>
+    <string name="pin_desc">4–8 digit emergency stop PIN</string>
+    <string name="pin_set">SET ></string>
+
+    <string name="bio_title">Biometric Unlock</string>
+    <string name="bio_desc">Fingerprint to stop alarm</string>
+
+    <string name="sensitivity_title">Motion Sensitivity</string>
+    <string name="battery_status_format">%d%% Battery</string>
+    <string name="gps_status_placeholder">±--m GPS</string>
+    <string name="photos_per_trigger">Photos Per Trigger</string>
+    <string name="photo_count_format">%1$d + %2$d ></string>
+    <string name="camera_captures_desc">Front + back camera captures</string>
+
+    <string name="recipients_config_desc">%d addresses configured</string>
+
+    <string name="alerts_history_title">Alert History</string>
+    <string name="alerts_history_subtitle">Security Event Timeline</string>
+    <string name="no_alerts">No recent alerts detected.</string>
+
+    <string name="photos_archive_title">Captured Photos</string>
+    <string name="photos_archive_subtitle">Evidence Archive</string>
+    <string name="no_photos">No evidence captured yet.</string>
+
+    <string name="sensitivity_label">Sensitivity: %s</string>
+    <string name="alarm_title">THEFT ALERT</string>
+    <string name="alarm_default_subtitle">Security protocol active</string>
+    <string name="alarm_instruction">Scan fingerprint or enter PIN to disarm</string>
+    <string name="alarm_footer">Evidence is being recorded and sent to owner</string>
+
+    <string name="btn_send_test">RUN</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="recipient_1_hint">Recipient 1 (Required)</string>
+    <string name="recipient_2_hint">Recipient 2 (Optional)</string>
+</resources>

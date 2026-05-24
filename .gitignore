@@ -1,0 +1,25 @@
+# Build artifacts
+.gradle/
+build/
+app/build/
+
+# Local configuration
+local.properties
+google-services.json
+
+# IDE Settings
+.idea/
+*.iml
+
+# Native build
+.externalNativeBuild/
+.cxx/
+
+# Misc
+*.DS_Store
+captures/
+*.jks
+*.keystore
+
+# Temporary artifacts
+.artifacts/

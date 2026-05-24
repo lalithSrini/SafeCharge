@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Core Deep UI Palette -->
+    <color name="bg_main">#020408</color>
+    <color name="bg_surface">#0A121D</color>
+    <color name="bg_card">#0E1A29</color>
+    <color name="bg_card_elevated">#142438</color>
+
+    <!-- Cyber Neon Accents -->
+    <color name="neon_cyan">#00E5FF</color>
+    <color name="neon_cyan_glow">#4D00E5FF</color>
+    <color name="neon_cyan_dim">#1A00E5FF</color>
+
+    <color name="neon_green">#00FF9D</color>
+    <color name="neon_green_dim">#1A00FF9D</color>
+
+    <color name="neon_red">#FF3D71</color>
+    <color name="neon_red_glow">#4DFF3D71</color>
+
+    <color name="neon_orange">#FFAA00</color>
+
+    <!-- Typography -->
+    <color name="text_primary">#F0F5FA</color>
+    <color name="text_secondary">#94A3B8</color>
+    <color name="text_dim">#475569</color>
+    <color name="text_muted">#1E293B</color>
+
+    <!-- Navigation -->
+    <color name="nav_bg">#070D16</color>
+    <color name="nav_inactive">#475569</color>
+
+    <!-- Logo Colors -->
+    <color name="logo_navy">#002046</color>
+    <color name="logo_blue">#1B5195</color>
+    <color name="logo_white">#FFFFFF</color>
+</resources>
