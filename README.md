@@ -30,6 +30,3 @@
    CLOUDINARY_UPLOAD_PRESET=your_preset_name
    ```
 4. Build and run in Android Studio.
-
-## License
-MIT License
