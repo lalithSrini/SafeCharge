@@ -1,6 +1,6 @@
 # SafeCharge
 
-**SafeCharge** is a premium, AI-powered anti-theft security system for Android. It protects your device while charging by monitoring for power disconnection and suspicious movement.
+**SafeCharge** is a premium, anti-theft security system for Android. It protects your device while charging by monitoring for power disconnection and suspicious movement.
 
 ## Key Features
 - **Theft Detection**: Sounds a high-volume alarm if the charger is unplugged.
@@ -17,6 +17,7 @@
 - **Cloud Evidence**: Cloudinary (Unsigned uploads)
 - **Email Service**: EmailJS API
 - **Image Loading**: Glide
+- **DataBase Storage**: Cloudenary
 
 ## Setup Instructions
 1. Clone the repository.
